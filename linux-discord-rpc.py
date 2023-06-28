@@ -218,7 +218,6 @@ def daemon() -> NoReturn:
                 continue
             finally:
                 try:
-                    print(options)
                     rpc.connect()
                     rpc.update(**options)
                 except:
