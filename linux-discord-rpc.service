@@ -1,0 +1,9 @@
+[Unit]
+Description=Discord Rich Presence Daemon
+
+[Service]
+ExecStart=rpc-daemon
+
+[Install]
+WantedBy=default.target
+
