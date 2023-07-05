@@ -2,8 +2,10 @@
 Custom Discord Rich Presence for Linux
 
 ## Dependencies
-`python-3` (tested with 3.11)  
-`pypresence` [repo](https://github.com/qwertyquerty/pypresence)  
+`python3` (tested with 3.11)  
+`pypresence` [pypi](https://pypi.org/project/pypresence/)  
+`psutil` [pypi](https://pypi.org/project/psutil/)  
+`pip` or `pipx` (manual install only, `pipx` recommended)
 
 ## Installation
 ### A) Package  
@@ -12,15 +14,14 @@ If you're using Gentoo Linux you can install this from my overlay:
 `# emerge net-misc/linux-discord-rpc`  
 
 ### B) Manual Install  
-Clone this repo  
-`$ git clone https://github.com/xarblu/linux-discord-rpc.git`  
-Then make the script executable  
-`$ chmod +x linux-discord-rpc.py`  
-And create symlinks for the cli/daemon (or use the ones inside the repo)  
-`$ ln -s <path_to_linux-discord-rpc.py> rpc-daemon`  
-`$ ln -s <path_to_linux-discord-rpc.py> rpc-cli`  
+Install via pipx:
+`$ pipx install https://github.com/xarblu/linux-discord-rpc.git`  
+
+Install via pip:  
+`$ pip install --user https://github.com/xarblu/linux-discord-rpc.git`  
+
 Optionally install the systemd-service (you may need to adjust the `ExecStart=` line)  
-`$ cp linux-dicord-rpc.service ~/.config/systemd/user`  
+`$ wget https://raw.githubusercontent.com/xarblu/linux-discord-rpc/main/extra/linux-discord-rpc.service -O ~/.config/systemd/user/linux-discord-rpc.service`  
 
 ## Behaviour/Usage
 Should be called via the aforementioned symlinks.  
