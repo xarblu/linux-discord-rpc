@@ -7,6 +7,7 @@ from pypresence import Presence
 
 from linux_discord_rpc.procs import find_pid
 from linux_discord_rpc.config import read_games_conf
+from linux_discord_rpc.optgen import gen_options
 
 # the main daemon interacting with discord and monitoring
 # game processes
