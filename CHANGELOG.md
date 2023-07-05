@@ -1,3 +1,7 @@
+# v2.1
+Hotfix:  
+- Bug: missing import in daemon.py
+
 # v2.0
 Restructuring:  
 - proper project structure
