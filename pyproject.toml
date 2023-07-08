@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "linux_discord_rpc"
-version = "2.1"
+version = "2.2"
 authors = [
   { name="Xarblu", email="xarblu@protonmail.com" },
 ]

@@ -1,3 +1,7 @@
+# v2.2
+Hotfix:
+- Bug: passed wrong argv in cli
+
 # v2.1
 Hotfix:  
 - Bug: missing import in daemon.py
